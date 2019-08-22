@@ -1,0 +1,256 @@
+function backup(){
+  console.log("i am taking backup")
+}
+
+function erase(){
+  console.log("i an erasing HDD")
+}
+
+function printer(){
+  console.log("i am taking a print")
+}
+
+// mapper = [backup, erase, printer]
+
+// for (var i =0 ; i<mapper.length; i++){
+//   mapper[i]()
+// }
+
+function flyNow(){
+  console.log("ia m flying");
+}
+
+mapper = {
+  'name': 'batman',
+  'age': 50,
+  'married': false,
+  'fly': flyNow,
+  'address':[
+    {
+      'street' : 'xyz',
+      'pincode' : '12345'
+    },
+    {
+      'street' : 'xyz-123',
+      'pincode' : '54321'
+    }
+  ]
+}
+
+
+// function square(x){
+//   return x*x
+// }
+
+// result=square(3)
+// console.log(result)
+
+// //Anonymous Function
+
+// square_1 = function(x) {
+//   return x*x
+// }
+
+// result_1 = square_1(3)
+// console.log("anonymous function" + result_1)
+
+
+
+// ES6 syntax
+// for(let i=0; i<10; i++){
+//   console.log(i)
+// }
+// console.log(i)
+
+
+
+// str="hello world"
+// console.log(str[0])
+// str[0] = 'F'
+// console.log(str)
+
+
+//Mutable
+// const customer = {
+//   name: 'ironman'
+// }
+
+// customer['name'] = 'superman'
+// console.log(customer)
+
+// Arrow Function.
+
+// const square = (x) => {
+//   return x*x
+// }
+
+
+//x*x is explicitly returned if brackers are added you need to write the return
+// if only single param we can exclude () << brackets
+square = x => x*x
+
+// map expects an address
+// result = arr.map(square)
+
+// filter expects boolean (if true it will be added else ignore)
+
+arr = [1,2,3,4,5,6]
+
+function square(x){
+  return x*x
+}
+
+function append(x){
+  return {
+    'name': x.name + '-',
+    'age': x.age + 10
+  }
+}
+
+function append_1(x){
+  return {
+    ...x,
+    'name': x.name + '-',
+    'age': x.age + 10
+  }
+}
+
+data =[
+  {
+    'name': "superman",
+    'age': 80,
+    'married': true
+  },
+    {
+    'name': "superman",
+    'age': 70
+  },
+   {
+    'name': "antman",
+     'age': 40,
+     'married': false
+  },
+   {
+    'name': "batman",
+     'age': 30
+  }
+  
+]
+
+function check(x){
+  if (x.name == "superman") {
+      return true
+  }
+  else {
+    return false
+  }
+}
+
+// result = data.filter(check).map(append_1)
+// console.log(result)
+
+
+//Destructuring
+arr2 = [1,2,3,4,5,6]
+a = arr[0]
+b = arr[1]
+
+const [a,b] = arr2
+
+
+// JSON formats list of objects
+// [
+//   {
+    
+//   }
+// ]
+
+// [[]]
+// {} - config file
+// []
+
+JSON.parser
+
+
+
+--------------------------------
+class Animal {
+  constructor(){
+    console.log("animal --")
+  }
+  
+  running(){
+    console.log("running")
+  }
+  
+}
+
+class Person extends Animal {
+  constructor(age){
+    super()
+    this.age = age
+    console.log("i am constructor")
+  }
+  
+  speak(){
+    console.log("speaking")
+  }
+  
+}
+
+let m = new Person(12)
+m.speak()
+m.wings=2
+console.log(m.wings)
+
+
+HOF
+
+function f1 (x,y){
+
+	return f2
+}
+
+
+function f2 (f){
+	return f
+}
+
+f1 (x,y)(h)
+
+
+------------- closure ------------------------
+
+function f1 (x,y){
+
+  function f2(){
+	
+    }
+
+	return f2
+}
+
+f3 = f1(x,y)
+f3()
+
+closure is when function returns "function address"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

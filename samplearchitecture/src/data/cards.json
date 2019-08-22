@@ -1,0 +1,18 @@
+[
+    {
+        "title": "i will get 10% return",
+        "description": "this is the best case"
+    },
+    {
+        "title": "i will get 30% return",
+        "description": "this is the ok ok case"
+    },
+    {
+        "title": "i will get 60% return",
+        "description": "this is the worst case"
+    },
+    {
+        "title": "i will get 100% return",
+        "description": "this is the impossible case"
+    }
+]
