@@ -23,7 +23,6 @@ class FormComponent extends React.Component {
         customerCountry: "India",
         customerId: "123",
       }
-
   }
 
   dataSubmitHandler = () => {
@@ -34,17 +33,21 @@ class FormComponent extends React.Component {
   // Spread operator helps you to add new objects to existing array or object
   formHandler = (event) => {
       this.setState({
+        formData: {
         ...this.state.formData,
         [event.target.name] : event.target.value
+        }
       })
   }
 
   clearHandler = () => {
       this.setState({
-        customerName: "",
-        customerAge: "",
-        customerCountry: "",
-        customerId: "",
+        formData: {
+          customerName: "",
+          customerAge: "",
+          customerCountry: "",
+          customerId: "",
+        }
       })
   }
 
