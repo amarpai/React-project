@@ -204,7 +204,7 @@ console.log(`Blue: ${blue}`); // Blue: 100
 JSON.parser
 
 
-
+No more Prototypes we have actual class based implementation in JS
 --------------------------------
 class Animal {
   constructor(){
