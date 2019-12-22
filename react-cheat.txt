@@ -10,11 +10,11 @@ function printer(){
   console.log("i am taking a print")
 }
 
-// mapper = [backup, erase, printer]
+mapper = [backup, erase, printer]
 
-// for (var i =0 ; i<mapper.length; i++){
-//   mapper[i]()
-// }
+for (var i =0 ; i<mapper.length; i++){
+  mapper[i]()
+}
 
 function flyNow(){
   console.log("ia m flying");
@@ -38,22 +38,32 @@ mapper = {
 }
 
 
-// function square(x){
-//   return x*x
-// }
+// Normal function
+function square(x){
+   return x*x
+}
 
-// result=square(3)
-// console.log(result)
+result=square(3)
+console.log(result)
 
-// //Anonymous Function
+//Anonymous Function
 
-// square_1 = function(x) {
-//   return x*x
-// }
+square_1 = function(x) {
+  return x*x
+}
 
-// result_1 = square_1(3)
+result_1 = square_1(3)
 // console.log("anonymous function" + result_1)
 
+// Arrow Function.
+
+// const square = (x) => {
+//   return x*x
+// }
+
+//x*x is explicitly returned if brackers are added you need to write the return
+// if only single param we can exclude () << brackets
+square = x => x*x
 
 
 // ES6 syntax
@@ -78,16 +88,7 @@ mapper = {
 // customer['name'] = 'superman'
 // console.log(customer)
 
-// Arrow Function.
 
-// const square = (x) => {
-//   return x*x
-// }
-
-
-//x*x is explicitly returned if brackers are added you need to write the return
-// if only single param we can exclude () << brackets
-square = x => x*x
 
 // map expects an address
 // result = arr.map(square)
@@ -150,12 +151,43 @@ function check(x){
 // console.log(result)
 
 
-//Destructuring
+//Destructuring array
 arr2 = [1,2,3,4,5,6]
 a = arr[0]
 b = arr[1]
 
 const [a,b] = arr2
+
+const student = {
+    firstname: 'Glad',
+    lastname: 'Chinda',
+    country: 'Nigeria'
+};
+
+// Object Destructuring
+const { firstname, lastname, country } = student
+
+onst student = {
+    name: 'John Doe',
+    age: 16,
+    scores: {
+        maths: 74,
+        english: 63
+    }
+};
+
+// We define 3 local variables: name, maths, science
+const { name, scores: {maths, science = 50} } = student;
+
+
+
+const rgb = [200, 255, 100];
+
+// Skip the first two items
+// Assign the only third item to the blue variable
+const [,, blue] = rgb;
+
+console.log(`Blue: ${blue}`); // Blue: 100
 
 
 // JSON formats list of objects
