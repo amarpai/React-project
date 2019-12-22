@@ -236,7 +236,7 @@ m.wings=2
 console.log(m.wings)
 
 
-HOF
+HOF - higher order functions
 
 function f1 (x,y){
 
