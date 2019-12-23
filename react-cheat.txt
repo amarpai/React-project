@@ -267,6 +267,12 @@ f3()
 
 closure is when function returns "function address"
 
+Virtual DOM:
+UI is kept in memory and synced with the real DOM by a library such as REACT DOM this process is called as Reconciliation.
+
+What is react Fiber:
+Fiber is the new reconciliation engine in React 16 it's main goal is incremental rendering of virtual DOM
+
 
 
 
